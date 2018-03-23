@@ -17,11 +17,13 @@ hi Visual ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#49483e gui=NONE
 hi CursorLine ctermfg=NONE ctermbg=60 cterm=NONE guifg=NONE guibg=#6a6482 gui=NONE
 hi CursorColumn ctermfg=NONE ctermbg=60 cterm=NONE guifg=NONE guibg=#6a6482 gui=NONE
 hi ColorColumn ctermfg=NONE ctermbg=60 cterm=NONE guifg=NONE guibg=#6a6482 gui=NONE
-hi LineNr ctermfg=145 ctermbg=60 cterm=NONE guifg=#a9a6b3 guibg=#6a6482 gui=NONE
-hi VertSplit ctermfg=102 ctermbg=102 cterm=NONE guifg=#888499 guibg=#888499 gui=NONE
-hi MatchParen ctermfg=218 ctermbg=NONE cterm=underline guifg=#ffb8d1 guibg=NONE gui=underline
-hi StatusLine ctermfg=231 ctermbg=102 cterm=bold guifg=#f8f8f2 guibg=#888499 gui=bold
-hi StatusLineNC ctermfg=231 ctermbg=102 cterm=NONE guifg=#f8f8f2 guibg=#888499 gui=NONE
+hi LineNr ctermfg=183 ctermbg=60 cterm=NONE guifg=#a9a6b3 guibg=#6a6482 gui=NONE
+highlight LineNr ctermfg=60 ctermbg=NONE
+
+hi VertSplit ctermfg=183 ctermbg=NONE cterm=NONE guifg=#888499 guibg=#888499 gui=NONE
+hi MatchParen ctermfg=210 ctermbg=NONE cterm=underline guifg=#ffb8d1 guibg=NONE gui=underline
+hi StatusLine ctermfg=NONE ctermbg=NONE cterm=bold guifg=#f8f8f2 guibg=#888499 gui=bold
+hi StatusLineNC ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#f8f8f2 guibg=#888499 gui=NONE
 hi Pmenu ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi PmenuSel ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#49483e gui=NONE
 hi IncSearch ctermfg=60 ctermbg=220 cterm=NONE guifg=#5a5475 guibg=#ffea00 gui=NONE
@@ -29,12 +31,13 @@ hi Search ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=un
 hi Directory ctermfg=183 ctermbg=NONE cterm=NONE guifg=#c5a3ff guibg=NONE gui=NONE
 hi Folded ctermfg=178 ctermbg=60 cterm=NONE guifg=#e6c000 guibg=#5a5475 gui=NONE
 
+hi vimGroup ctermfg=116 ctermbg=NONE guifg=NONE guibg=NONE gui=NONE
 hi Normal ctermfg=231 ctermbg=60 cterm=NONE guifg=#f8f8f2 guibg=#5a5475 gui=NONE
 hi Boolean ctermfg=183 ctermbg=NONE cterm=NONE guifg=#c5a3ff guibg=NONE gui=NONE
 hi Character ctermfg=183 ctermbg=NONE cterm=NONE guifg=#c5a3ff guibg=NONE gui=NONE
-hi Comment ctermfg=178 ctermbg=NONE cterm=NONE guifg=#e6c000 guibg=NONE gui=NONE
+hi Comment ctermfg=145 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Conditional ctermfg=218 ctermbg=NONE cterm=NONE guifg=#ffb8d1 guibg=NONE gui=NONE
-hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Constant ctermfg=183 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Define ctermfg=218 ctermbg=NONE cterm=NONE guifg=#ffb8d1 guibg=NONE gui=NONE
 hi DiffAdd ctermfg=231 ctermbg=64 cterm=bold guifg=#f8f8f2 guibg=#508c1c gui=bold
 hi DiffDelete ctermfg=88 ctermbg=NONE cterm=NONE guifg=#951117 guibg=NONE gui=NONE
@@ -43,24 +46,51 @@ hi DiffText ctermfg=231 ctermbg=24 cterm=bold guifg=#f8f8f2 guibg=#204a87 gui=bo
 hi ErrorMsg ctermfg=231 ctermbg=197 cterm=NONE guifg=#f8f8f0 guibg=#f92672 gui=NONE
 hi WarningMsg ctermfg=231 ctermbg=197 cterm=NONE guifg=#f8f8f0 guibg=#f92672 gui=NONE
 hi Float ctermfg=183 ctermbg=NONE cterm=NONE guifg=#c5a3ff guibg=NONE gui=NONE
-hi Function ctermfg=227 ctermbg=NONE cterm=NONE guifg=#fff352 guibg=NONE gui=NONE
+" hi Function ctermfg=227 ctermbg=NONE cterm=NONE guifg=#fff352 guibg=NONE gui=NONE
+hi Function ctermfg=116 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Identifier ctermfg=158 ctermbg=NONE cterm=NONE guifg=#c2ffdf guibg=NONE gui=italic
-hi Keyword ctermfg=218 ctermbg=NONE cterm=NONE guifg=#ffb8d1 guibg=NONE gui=NONE
+hi Keyword ctermfg=183 ctermbg=NONE cterm=NONE guifg=#ffb8d1 guibg=NONE gui=NONE
 hi Label ctermfg=220 ctermbg=NONE cterm=NONE guifg=#ffea00 guibg=NONE gui=NONE
-hi NonText ctermfg=59 ctermbg=60 cterm=NONE guifg=#3b3a32 guibg=#625c7b gui=NONE
-hi Number ctermfg=183 ctermbg=NONE cterm=NONE guifg=#c5a3ff guibg=NONE gui=NONE
+hi NonText ctermfg=60 ctermbg=NONE cterm=NONE guifg=#3b3a32 guibg=#625c7b gui=NONE
+hi Number ctermfg=115 ctermbg=NONE cterm=NONE guifg=#c5a3ff guibg=NONE gui=NONE
 hi Operator ctermfg=218 ctermbg=NONE cterm=NONE guifg=#ffb8d1 guibg=NONE gui=NONE
 hi PreProc ctermfg=218 ctermbg=NONE cterm=NONE guifg=#ffb8d1 guibg=NONE gui=NONE
 hi Special ctermfg=231 ctermbg=NONE cterm=NONE guifg=#f8f8f2 guibg=NONE gui=NONE
 hi SpecialKey ctermfg=59 ctermbg=60 cterm=NONE guifg=#3b3a32 guibg=#6a6482 gui=NONE
 hi Statement ctermfg=218 ctermbg=NONE cterm=NONE guifg=#ffb8d1 guibg=NONE gui=NONE
 hi StorageClass ctermfg=158 ctermbg=NONE cterm=NONE guifg=#c2ffdf guibg=NONE gui=italic
-hi String ctermfg=220 ctermbg=NONE cterm=NONE guifg=#ffea00 guibg=NONE gui=NONE
+hi String ctermfg=183 ctermbg=NONE cterm=NONE guifg=#ffea00 guibg=NONE gui=NONE 
 hi Tag ctermfg=218 ctermbg=NONE cterm=NONE guifg=#ffb8d1 guibg=NONE gui=NONE
 hi Title ctermfg=231 ctermbg=NONE cterm=bold guifg=#f8f8f2 guibg=NONE gui=bold
-hi Todo ctermfg=178 ctermbg=NONE cterm=inverse,bold guifg=#e6c000 guibg=NONE gui=inverse,bold
+hi Todo ctermfg=158 ctermbg=NONE cterm=inverse,bold guifg=#e6c000 guibg=NONE gui=inverse,bold
 hi Type ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=underline
+
+hi pythonDecorator ctermfg=218 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+" hi pythonDecorator ctermfg=153 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+" that nice af dark teal => 37
+" hi pythonFunction ctermfg=37 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi pythonFunction ctermfg=116 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+" hi pythonFunction ctermfg=158 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi pythonBuiltin ctermfg=153 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi pythonNumber ctermfg=115 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+" hi pythonInclude ctermfg=179 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+" pythonInclude = import, from 
+" pythonOperator = and, not, in 
+" pythonConditional = if, else
+" pythonBuiltin = type() dict() format()
+" pythonFunction 
+" pythonException = raise 
+" pythonRepeat = for
+" pythonComment
+
+hi javaScriptParens ctermfg=218 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi jsFuncArgs ctermfg=218 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+" javaScriptIdentifier = let, this
+" javaScriptReserved = const, export
+" javaScriptLabel = case, default
+" javaScriptConditional = if, else, switch
+
 hi rubyClass ctermfg=218 ctermbg=NONE cterm=NONE guifg=#ffb8d1 guibg=NONE gui=NONE
 hi rubyFunction ctermfg=227 ctermbg=NONE cterm=NONE guifg=#fff352 guibg=NONE gui=NONE
 hi rubyInterpolationDelimiter ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE

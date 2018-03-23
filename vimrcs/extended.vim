@@ -36,7 +36,7 @@ set guioptions-=L
 " Colorscheme
 set background=dark
 " colorscheme hybrid
-colorscheme fairyfloss2
+colorscheme fairyfloss
 hi Normal guibg=NONE ctermbg=NONE
 " highlight LineNr ctermfg=60 ctermbg=NONE
 
