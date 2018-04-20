@@ -46,7 +46,6 @@ let s:_DEFAULT_CHECKERS = {
         \ 'html':          ['tidy'],
         \ 'jade':          ['jade_lint'],
         \ 'java':          ['javac'],
-        \ 'javascript':    ['jshint', 'jslint'],
         \ 'json':          ['jsonlint', 'jsonval'],
         \ 'less':          ['lessc'],
         \ 'lex':           ['flex'],
