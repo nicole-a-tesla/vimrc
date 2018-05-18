@@ -65,6 +65,44 @@ hi Title ctermfg=231 ctermbg=NONE cterm=bold guifg=#f8f8f2 guibg=NONE gui=bold
 hi Todo ctermfg=158 ctermbg=NONE cterm=inverse,bold guifg=#e6c000 guibg=NONE gui=inverse,bold
 hi Type ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=underline
+hi Delimiter ctermfg=123 ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=underline
+
+
+" keywords class, implements, probably extends
+hi phpStructure ctermfg=218 ctermbg=NONE cterm=NONE guifg=#ffb8d1 guibg=NONE gui=NONE
+
+" 43 is a nice, slightly bolder version of 116 (also 51)
+
+" var after $
+hi phpIdentifier ctermfg=116 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+
+hi phpNumber ctermfg=45 ctermbg=NONE cterm=NONE guifg=#ffb8d1 guibg=NONE gui=NONE
+" hi phpRegion ctermfg=218 ctermbg=NONE cterm=NONE guifg=#ffb8d1 guibg=NONE gui=NONE
+
+" {} -->
+"phpParent
+"
+" '->'s => phpMemberSelector
+" '::' => phpOperator
+
+" public
+" hi phpStorageClass ctermfg=123 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi phpStorageClass ctermfg=104 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi phpParent ctermfg=75 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi phpMemberSelector ctermfg=75 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi phpOperator ctermfg=75 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+
+" count(), for example
+hi phpFunctions ctermfg=215 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi phpSpecialFunction ctermfg=218 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+
+
+" case, default ->
+" phpLabel
+"
+" all other code = phpRegion
+"
+" phpTodo
 
 hi pythonDecorator ctermfg=218 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 " hi pythonDecorator ctermfg=153 ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE

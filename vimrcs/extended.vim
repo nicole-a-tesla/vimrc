@@ -34,10 +34,19 @@ set guioptions-=l
 set guioptions-=L
 
 " Colorscheme
+" hi Normal guibg=NONE ctermbg=NONE
 set background=dark
-" colorscheme hybrid
-colorscheme fairyfloss
-hi Normal guibg=NONE ctermbg=NONE
+" 132 dark dusky pink, nice but makes things too primary
+" 175 light dusky pink (more on nord theme)
+" 174 nice salmon. good for something else 
+" 182 very pale pink, nice but too similar to the purple!
+hi String ctermfg=2 ctermbg=NONE guifg=#d18ec3 guibg=NONE
+hi Number ctermfg=174 ctermbg=NONE guifg=#d18ec3 guibg=NONE
+hi Boolean ctermfg=175 ctermbg=NONE guifg=#d18ec3 guibg=NONE
+" hi phpMethodsVar ctermfg=175 ctermbg=NONE guifg=#d18ec3 guibg=NONE
+"" past: hybrid, fairyfloss
+" colorscheme nord
+" hi Normal guibg=NONE ctermbg=NONE
 " highlight LineNr ctermfg=60 ctermbg=NONE
 
 
@@ -49,8 +58,6 @@ set number
 set mouse=a  
 " map escape to j + k 
 :imap jk <Esc>
-" map <C-i> to python debugging statement
-:nmap <C-I> oimport ipdb; ipdb.set_trace()jk
 
 " Show highlighting groups for current word
 nmap <C-S-P> :call <SID>SynStack()<CR>
@@ -63,6 +70,39 @@ endfunc
 
 " improve javascript highlighting
 let g:javascript_plugin_jsdoc = 1
+
+ 
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
+set expandtab                      " tabs -> spaces
+set history=1000                   " keeps a thousand lines of history
+set magic                          " allows pattern matching with special characters
+set backspace=2                    " make backspace work like normal
+set visualbell                     " visual bell instead of annoying beeping
+set virtualedit=onemore            " end of the line? what's that?
+
+" Delete trailing space on save
+autocmd BufWritePre *.php :%s/\s\+$//e
+autocmd BufWritePre *.js :%s/\s\+$//e
+autocmd BufWritePre *.css :%s/\s\+$//e
+autocmd BufWritePre *.tpl :%s/\s\+$//e
+
+" Ale eslint, php and prettier setup
+let g:ale_linters = {
+\    'javascript': ['eslint'],
+\    'php': ['phpcs']
+\}
+let g:ale_fixers = {
+\    'javascript': ['prettier']
+\}
+ 
+" Run the prettier formatter on save
+let g:ale_fix_on_save = 1
+ 
+" Configure phpcs to use one of Etsy's code standards
+let g:ale_php_phpcs_standard = expand($HOME) . '/development/Etsyweb/tests/standards/stable-ruleset.xml'
+
 " ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ ~*~ 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
